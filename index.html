@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGSDON – Women's Footwear Manufacturer & Wholesale Supplier | Jinjiang, China</title>
+  <meta name="description" content="AGSDON – Premium women's footwear manufacturer since 2011. 5 self-owned factories in Jinjiang, China. OEM/ODM available. MOQ from 100 pairs. Worldwide B2B wholesale.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #F7F4EF;
+      --warm-white: #FDFCF9;
+      --stone: #E8E2D9;
+      --taupe: #C4B9AA;
+      --sand: #A89580;
+      --umber: #6B5A4E;
+      --charcoal: #2D2926;
+      --rose: #C9A99A;
+      --sage: #8FA68D;
+      --navy: #1A3A4A;
+      --gold: #B8976A;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --nav-h: 72px;
+      --max-w: 1240px;
+      --gap: clamp(16px, 4vw, 48px);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--warm-white);
+      color: var(--charcoal);
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+    /* ─── Top Bar ─── */
+    .top-bar {
+      background: var(--navy);
+      color: var(--taupe);
+      font-size: 12px;
+      letter-spacing: .04em;
+      padding: 8px var(--gap);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+    }
+    .top-bar-left { display: flex; gap: 24px; align-items: center; }
+    .top-bar-left span { color: var(--stone); }
+    .top-bar-right { display: flex; gap: 18px; align-items: center; }
+    .top-bar-right a { color: var(--taupe); transition: color .2s; }
+    .top-bar-right a:hover { color: var(--cream); }
+    .lang-switch {
+      font-size: 12px; padding: 4px 10px;
+      border: 1px solid var(--taupe); border-radius: 2px;
+      background: transparent; color: var(--taupe);
+      transition: border-color .2s, color .2s;
+    }
+    .lang-switch:hover { border-color: var(--cream); color: var(--cream); }
+
+    /* ─── Nav ─── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(253,252,249,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--stone);
+      height: var(--nav-h);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--gap);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      color: var(--charcoal);
+      flex-shrink: 0;
+    }
+    .nav-logo em { color: var(--navy); font-style: normal; }
+    .nav-logo span {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 9px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--sand);
+      font-weight: 400;
+      line-height: 1;
+    }
+    .nav-links {
+      display: flex;
+      gap: 0;
+      list-style: none;
+    }
+    .nav-links a {
+      padding: 8px 14px;
+      font-size: 12.5px;
+      letter-spacing: .04em;
+      color: var(--umber);
+      border-radius: 2px;
+      transition: color .2s, background .2s;
+    }
+    .nav-links a:hover { color: var(--charcoal); background: var(--stone); }
+    .btn-inquire {
+      padding: 10px 24px;
+      background: var(--navy);
+      color: #fff;
+      border-radius: 2px;
+      font-size: 13px;
+      letter-spacing: .05em;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: background .2s, transform .1s;
+    }
+    .btn-inquire:hover { background: var(--charcoal); transform: translateY(-1px); }
+    @media (max-width: 900px) { .nav-links { display: none; } }
+
+    /* ─── Hero ─── */
+    .hero {
+      position: relative;
+      min-height: min(85vh, 640px);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    .hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        115deg,
+        rgba(26,58,74,.72) 0%,
+        rgba(26,58,74,.45) 50%,
+        rgba(26,58,74,.2) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: var(--gap);
+      width: 100%;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: rgba(247,244,239,.75);
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 5.5vw, 72px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 18px;
+      max-width: 620px;
+    }
+    .hero-title em { font-style: italic; color: var(--rose); }
+    .hero-sub {
+      font-size: 16px;
+      color: rgba(247,244,239,.85);
+      margin-bottom: 36px;
+      max-width: 500px;
+      line-height: 1.7;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-stat-num {
+      font-family: var(--font-serif);
+      font-size: 38px;
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--taupe);
+      margin-top: 4px;
+    }
+    .btn-hero {
+      display: inline-block;
+      padding: 15px 36px;
+      background: var(--cream);
+      color: var(--navy);
+      font-size: 13px;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 2px;
+      transition: background .2s, transform .15s;
+    }
+    .btn-hero:hover { background: #fff; transform: translateY(-2px); }
+
+    /* ─── Section Shared ─── */
+    section { padding: clamp(56px, 8vh, 96px) var(--gap); }
+    .section-eyebrow {
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--charcoal);
+    }
+    .section-lead {
+      margin-top: 14px;
+      font-size: 15px;
+      color: var(--umber);
+      max-width: 560px;
+    }
+    .section-center { text-align: center; }
+    .section-center .section-lead { margin-left: auto; margin-right: auto; }
+
+    /* ─── Trust Strip ─── */
+    .trust-strip {
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,.1);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .trust-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 22px var(--gap);
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 14px 32px;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--stone);
+      letter-spacing: .04em;
+    }
+    .trust-icon { font-size: 20px; }
+
+    /* ─── Product Categories ─── */
+    .cats-inner { max-width: var(--max-w); margin: 0 auto; }
+    .cats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 48px;
+    }
+    @media (max-width: 900px) { .cats-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .cats-grid { grid-template-columns: 1fr; } }
+    .cat-card {
+      border: 1px solid var(--stone);
+      border-radius: 4px;
+      overflow: hidden;
+      background: #fff;
+      transition: box-shadow .2s, transform .15s;
+      cursor: pointer;
+    }
+    .cat-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.08); transform: translateY(-2px); }
+    .cat-img { aspect-ratio: 1; overflow: hidden; }
+    .cat-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+    .cat-card:hover .cat-img img { transform: scale(1.04); }
+    .cat-body { padding: 18px 20px 20px; }
+    .cat-name { font-size: 16px; font-weight: 500; margin-bottom: 6px; }
+    .cat-specs { font-size: 12px; color: var(--sand); display: flex; gap: 16px; }
+    .cat-specs span { display: flex; align-items: center; gap: 4px; }
+    .cat-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      margin-top: 12px;
+      font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+      color: var(--navy); font-weight: 500;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color .2s;
+    }
+    .cat-card:hover .cat-link { border-bottom-color: var(--navy); }
+
+    /* ─── Factory Section ─── */
+    .factory-section { background: var(--cream); }
+    .factory-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(36px, 6vw, 80px);
+      align-items: center;
+    }
+    @media (max-width: 768px) { .factory-inner { grid-template-columns: 1fr; } }
+    .factory-img-wrap { position: relative; }
+    .factory-img-wrap img { border-radius: 4px; width: 100%; }
+    .factory-badge {
+      position: absolute;
+      bottom: -16px; right: -16px;
+      background: var(--navy);
+      color: var(--cream);
+      padding: 16px 22px;
+      border-radius: 3px;
+      text-align: center;
+    }
+    .factory-badge-num {
+      font-family: var(--font-serif);
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 1;
+    }
+    .factory-badge-label {
+      font-size: 11px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+    .factory-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 32px 0;
+    }
+    .ff-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .ff-icon {
+      width: 42px; height: 42px;
+      border-radius: 3px;
+      background: var(--navy);
+      color: var(--cream);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .ff-title { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+    .ff-desc { font-size: 12.5px; color: var(--umber); line-height: 1.6; }
+
+    /* ─── OEM/ODM Process ─── */
+    .oem-inner { max-width: var(--max-w); margin: 0 auto; }
+    .oem-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-top: 48px;
+      counter-reset: step;
+    }
+    @media (max-width: 900px) { .oem-steps { grid-template-columns: 1fr; max-width: 380px; margin-left: auto; margin-right: auto; } }
+    .oem-step {
+      text-align: center;
+      padding: 24px 16px;
+      border: 1px solid var(--stone);
+      border-radius: 4px;
+      background: #fff;
+      position: relative;
+    }
+    .oem-step-num {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--cream);
+      font-size: 16px;
+      font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px;
+    }
+    .oem-step-title { font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+    .oem-step-desc { font-size: 12px; color: var(--umber); line-height: 1.6; }
+
+    /* ─── Quality Control ─── */
+    .qc-section { background: var(--navy); color: var(--cream); }
+    .qc-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(36px, 6vw, 80px);
+      align-items: center;
+    }
+    @media (max-width: 768px) { .qc-inner { grid-template-columns: 1fr; } }
+    .qc-section .section-eyebrow { color: var(--taupe); }
+    .qc-section .section-title { color: #fff; }
+    .qc-section .section-lead { color: var(--taupe); }
+    .qc-list { margin-top: 28px; }
+    .qc-row {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .qc-check {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--sage);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .qc-name { font-size: 14px; font-weight: 500; color: var(--cream); margin-bottom: 3px; }
+    .qc-desc { font-size: 12.5px; color: var(--taupe); }
+    .qc-img-wrap img { border-radius: 4px; width: 100%; }
+
+    /* ─── Trade Info ─── */
+    .trade-inner { max-width: var(--max-w); margin: 0 auto; }
+    .trade-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    @media (max-width: 768px) { .trade-grid { grid-template-columns: 1fr 1fr; } }
+    .trade-card {
+      text-align: center;
+      padding: 28px 20px;
+      border: 1px solid var(--stone);
+      border-radius: 4px;
+      background: #fff;
+    }
+    .trade-card-icon { font-size: 32px; margin-bottom: 14px; }
+    .trade-card-title { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+    .trade-card-body { font-size: 12.5px; color: var(--umber); line-height: 1.65; }
+    .trade-card-highlight { display: inline-block; margin-top: 8px; padding: 3px 10px; background: var(--cream); border-radius: 2px; font-size: 11px; font-weight: 500; color: var(--navy); letter-spacing: .04em; }
+
+    /* ─── Featured Products B2B ─── */
+    .prod-inner { max-width: var(--max-w); margin: 0 auto; }
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    @media (max-width: 900px) { .prod-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .prod-grid { grid-template-columns: 1fr; } }
+    .prod-card {
+      background: #fff;
+      border: 1px solid var(--stone);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: box-shadow .2s;
+    }
+    .prod-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.07); }
+    .prod-img { aspect-ratio: 1; overflow: hidden; }
+    .prod-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .prod-card:hover .prod-img img { transform: scale(1.04); }
+    .prod-badge {
+      position: absolute; top: 10px; left: 10px;
+      padding: 3px 9px; border-radius: 2px;
+      font-size: 10px; letter-spacing: .06em;
+      text-transform: uppercase; font-weight: 600;
+    }
+    .prod-detail { padding: 16px 16px 18px; position: relative; }
+    .prod-name { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+    .prod-type { font-size: 11px; color: var(--sand); letter-spacing: .04em; margin-bottom: 12px; }
+    .prod-moq {
+      background: var(--cream);
+      border-radius: 3px;
+      padding: 8px 10px;
+      font-size: 12px;
+      margin-bottom: 12px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .prod-moq-label { color: var(--sand); font-size: 11px; }
+    .prod-moq-val { font-weight: 600; color: var(--navy); }
+    .prod-pricing {
+      display: flex; gap: 10px;
+      font-size: 11px;
+      margin-bottom: 14px;
+      color: var(--umber);
+    }
+    .prod-price-tier {
+      flex: 1; text-align: center;
+      padding: 6px;
+      background: var(--cream); border-radius: 2px;
+    }
+    .prod-price-tier strong { display: block; color: var(--charcoal); font-size: 14px; }
+    .btn-inquire-sm {
+      display: block; width: 100%;
+      padding: 10px;
+      background: var(--navy);
+      color: #fff;
+      border-radius: 2px;
+      font-size: 12px;
+      letter-spacing: .05em;
+      font-weight: 500;
+      text-align: center;
+      transition: background .2s;
+    }
+    .btn-inquire-sm:hover { background: var(--charcoal); }
+
+    /* ─── Testimonials B2B ─── */
+    .testi-section { background: var(--cream); }
+    .testi-inner { max-width: var(--max-w); margin: 0 auto; }
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    @media (max-width: 768px) { .testi-grid { grid-template-columns: 1fr; } }
+    .testi-card {
+      background: #fff;
+      border-radius: 4px;
+      padding: 28px;
+      border: 1px solid var(--stone);
+    }
+    .testi-country { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--sand); margin-bottom: 12px; }
+    .testi-text { font-size: 14px; color: var(--umber); line-height: 1.75; font-style: italic; margin-bottom: 18px; }
+    .testi-author { display: flex; align-items: center; gap: 10px; }
+    .testi-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; font-weight: 600;
+    }
+    .testi-name { font-size: 13px; font-weight: 500; }
+    .testi-role { font-size: 11px; color: var(--sand); margin-top: 2px; }
+    .testi-order { font-size: 11px; color: var(--sage); margin-top: 2px; font-weight: 500; }
+
+    /* ─── RFQ CTA ─── */
+    .rfq-section { background: linear-gradient(135deg, var(--navy) 0%, #0D2E3C 100%); color: var(--cream); }
+    .rfq-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(36px, 6vw, 72px);
+      align-items: center;
+    }
+    @media (max-width: 768px) { .rfq-inner { grid-template-columns: 1fr; } }
+    .rfq-section .section-eyebrow { color: var(--taupe); }
+    .rfq-section .section-title { color: #fff; }
+    .rfq-section .section-lead { color: var(--taupe); }
+    .rfq-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .rfq-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 520px) { .rfq-row { grid-template-columns: 1fr; } }
+    .rfq-field { }
+    .rfq-field label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--taupe);
+      margin-bottom: 5px;
+    }
+    .rfq-field input, .rfq-field select, .rfq-field textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 2px;
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      font-size: 14px;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: border-color .2s;
+    }
+    .rfq-field input:focus, .rfq-field select:focus, .rfq-field textarea:focus { border-color: rgba(255,255,255,.5); }
+    .rfq-field input::placeholder, .rfq-field textarea::placeholder { color: rgba(255,255,255,.35); }
+    .rfq-field select { color: var(--taupe); }
+    .rfq-field select option { color: var(--charcoal); background: #fff; }
+    .btn-rfq {
+      padding: 14px;
+      background: var(--cream);
+      color: var(--navy);
+      border-radius: 2px;
+      font-size: 14px;
+      letter-spacing: .06em;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: background .2s;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    .btn-rfq:hover { background: #fff; }
+    .rfq-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .rfq-benefit {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--taupe);
+    }
+    .rfq-benefit-check { color: var(--sage); font-weight: 600; }
+
+    /* ─── Footer ─── */
+    footer {
+      background: var(--charcoal);
+      color: var(--taupe);
+      padding: 64px var(--gap) 32px;
+    }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px 32px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    @media (max-width: 768px) { .footer-top { grid-template-columns: 1fr 1fr; } }
+    .footer-brand .nav-logo { font-size: 24px; color: var(--cream); margin-bottom: 8px; display: inline-block; }
+    .footer-brand .nav-logo span { display: block; font-size: 8px; color: var(--taupe); margin-top: -2px; }
+    .footer-desc { font-size: 13px; line-height: 1.75; max-width: 260px; margin-top: 8px; }
+    .footer-contact-row { display: flex; align-items: center; gap: 8px; font-size: 13px; margin-top: 6px; color: var(--taupe); }
+    .footer-social { display: flex; gap: 10px; margin-top: 18px; }
+    .social-btn {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px;
+      transition: border-color .2s, background .2s;
+    }
+    .social-btn:hover { border-color: var(--taupe); background: rgba(255,255,255,.05); }
+    .footer-col h4 {
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--cream);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li + li { margin-top: 10px; }
+    .footer-col a { font-size: 13px; color: var(--taupe); transition: color .2s; }
+    .footer-col a:hover { color: var(--cream); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 24px;
+      font-size: 12px;
+      color: rgba(196,185,170,.5);
+    }
+
+    /* ─── Sticky RFQ Button Mobile ─── */
+    .mobile-rfq {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 200;
+      background: var(--navy);
+      padding: 12px 16px;
+      text-align: center;
+    }
+    .mobile-rfq a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 900px) { .mobile-rfq { display: block; } body { padding-bottom: 56px; } }
+  </style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <span>📧 info@agsdon.store</span>
+    <span>📞 +86 595-xxxx-xxxx</span>
+  </div>
+  <div class="top-bar-right">
+    <a href="#">🇨🇳 中文</a>
+    <a href="#">🇬🇧 English</a>
+    <a href="#">🇪🇸 Español</a>
+    <a href="#">🇯🇵 日本語</a>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">AGS<em>DON</em><span>Footwear Manufacturer</span></a>
+    <ul class="nav-links">
+      <li><a href="#categories">Products</a></li>
+      <li><a href="#factory">Factory Tour</a></li>
+      <li><a href="#oem">OEM / ODM</a></li>
+      <li><a href="#quality">Quality Control</a></li>
+      <li><a href="#trade">Trade Info</a></li>
+    </ul>
+    <a href="#rfq" class="btn-inquire">Request Quote</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <img class="hero-img" src="https://sc02.alicdn.com/kf/A97a7f2a31b864ae3abc7c274f7755b08f.png" alt="AGSDON shoe factory production line in Jinjiang">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Women's Footwear Manufacturer Since 2011</p>
+    <h1 class="hero-title">Your <em>Reliable</em> Footwear Manufacturing Partner</h1>
+    <p class="hero-sub">5 self-owned factories in Jinjiang, China. OEM & ODM service for global brands. MOQ from 100 pairs. Ship to 50+ countries.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">15<em style="font-style:normal;color:var(--rose);font-size:28px;">+</em></div>
+        <div class="hero-stat-label">Years Experience</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">5</div>
+        <div class="hero-stat-label">Own Factories</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">50<em style="font-style:normal;color:var(--rose);font-size:28px;">+</em></div>
+        <div class="hero-stat-label">Export Countries</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">500<em style="font-style:normal;color:var(--rose);font-size:28px;">K</em></div>
+        <div class="hero-stat-label">Pairs / Year</div>
+      </div>
+    </div>
+    <a href="#rfq" class="btn-hero">Get Factory Quote →</a>
+  </div>
+</section>
+
+<!-- Digital Trust Strip -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-icon">🏭</span> 5 Self-Owned Factories</div>
+    <div class="trust-item"><span class="trust-icon">📦</span> MOQ from 100 Pairs</div>
+    <div class="trust-item"><span class="trust-icon">🎨</span> OEM / ODM / Private Label</div>
+    <div class="trust-item"><span class="trust-icon">✅</span> ISO 9001 Certified</div>
+    <div class="trust-item"><span class="trust-icon">🚢</span> FOB / CIF / DDP Worldwide</div>
+  </div>
+</div>
+
+<!-- Product Categories -->
+<section id="categories">
+  <div class="cats-inner">
+    <div class="section-center">
+      <p class="section-eyebrow">Our Product Range</p>
+      <h2 class="section-title">Browse by Category</h2>
+      <p class="section-lead" style="max-width:600px;">From casual sneakers to elegant boots — our 5 factories produce over 500,000 pairs annually across 8 major categories.</p>
+    </div>
+    <div class="cats-grid">
+      <div class="cat-card" onclick="document.getElementById('rfq').scrollIntoView({behavior:'smooth'})">
+        <div class="cat-img"><img src="https://sc02.alicdn.com/kf/A27a36865780245dd921b5b7253f45bfe1.png" alt="Chunky Sneakers" loading="lazy"></div>
+        <div class="cat-body">
+          <div class="cat-name">Chunky Sneakers</div>
+          <div class="cat-specs"><span>📦 MOQ 100 prs</span><span>⏱ 25–35 days</span></div>
+          <div class="cat-link">Inquire Now →</div>
+        </div>
+      </div>
+      <div class="cat-card" onclick="document.getElementById('rfq').scrollIntoView({behavior:'smooth'})">
+        <div class="cat-img"><img src="https://sc02.alicdn.com/kf/Ad1b9dfcd6e9c44259ebc526679aaa2791.png" alt="Mary Jane Flats" loading="lazy"></div>
+        <div class="cat-body">
+          <div class="cat-name">Mary Jane & Flats</div>
+          <div class="cat-specs"><span>📦 MOQ 100 prs</span><span>⏱ 25–30 days</span></div>
+          <div class="cat-link">Inquire Now →</div>
+        </div>
+      </div>
+      <div class="cat-card" onclick="document.getElementById('rfq').scrollIntoView({behavior:'smooth'})">
+        <div class="cat-img"><img src="https://sc02.alicdn.com/kf/Aebc8753f5bc14ea5942b46b4ebd34938Q.png" alt="Boots & Sandals" loading="lazy"></div>
+        <div class="cat-body">
+          <div class="cat-name">Boots & Sandals</div>
+          <div class="cat-specs"><span>📦 MOQ 200 prs</span><span>⏱ 30–45 days</span></div>
+          <div class="cat-link">Inquire Now →</div>
+        </div>
+      </div>
+      <div class="cat-card" onclick="document.getElementById('rfq').scrollIntoView({behavior:'smooth'})">
+        <div class="cat-img"><img src="https://sc02.alicdn.com/kf/A6174b098b33e4d41843f3e679bd1fbcdg.png" alt="Catalog Collection" loading="lazy"></div>
+        <div class="cat-body">
+          <div class="cat-name">Full Catalog</div>
+          <div class="cat-specs"><span>📄 200+ styles</span><span>🎨 Customizable</span></div>
+          <div class="cat-link">Download Catalog →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products with B2B Pricing -->
+<section style="background:var(--cream);">
+  <div class="prod-inner">
+    <div class="section-center">
+      <p class="section-eyebrow">Hot Sellers</p>
+      <h2 class="section-title">Featured Wholesale Products</h2>
+      <p class="section-lead" style="max-width:600px;">Our most-ordered styles by global buyers. Tiered pricing available for bulk orders.</p>
+    </div>
+    <div class="prod-grid">
+      <!-- Product 1 -->
+      <div class="prod-card">
+        <div class="prod-img" style="position:relative;"><img src="https://sc02.alicdn.com/kf/A27a36865780245dd921b5b7253f45bfe1.png" alt="Cloud Chunky Sneaker" loading="lazy"><span style="position:absolute;top:10px;left:10px;background:var(--sage);color:#fff;padding:3px 9px;border-radius:2px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;">Best Seller</span></div>
+        <div class="prod-detail">
+          <div class="prod-name">Cloud Chunky Sneaker</div>
+          <div class="prod-type">Sneakers · Dad Shoes</div>
+          <div class="prod-moq">
+            <span class="prod-moq-label">MOQ</span>
+            <span class="prod-moq-val">100 Pairs</span>
+            <span class="prod-moq-label">Lead Time</span>
+            <span class="prod-moq-val">25–30 Days</span>
+          </div>
+          <div class="prod-pricing">
+            <div class="prod-price-tier"><strong>$4.80</strong> 100–500 prs</div>
+            <div class="prod-price-tier"><strong>$4.30</strong> 500–2000 prs</div>
+            <div class="prod-price-tier"><strong>$3.90</strong> 2000+ prs</div>
+          </div>
+          <a href="#rfq" class="btn-inquire-sm">Inquire This Product</a>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="prod-card">
+        <div class="prod-img" style="position:relative;"><img src="https://sc02.alicdn.com/kf/Ad1b9dfcd6e9c44259ebc526679aaa2791.png" alt="Mary Jane Flat" loading="lazy"><span style="position:absolute;top:10px;left:10px;background:var(--rose);color:#fff;padding:3px 9px;border-radius:2px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;">Trending</span></div>
+        <div class="prod-detail">
+          <div class="prod-name">Petal Mary Jane Flat</div>
+          <div class="prod-type">Mary Janes · Flats</div>
+          <div class="prod-moq">
+            <span class="prod-moq-label">MOQ</span>
+            <span class="prod-moq-val">100 Pairs</span>
+            <span class="prod-moq-label">Lead Time</span>
+            <span class="prod-moq-val">25–30 Days</span>
+          </div>
+          <div class="prod-pricing">
+            <div class="prod-price-tier"><strong>$4.20</strong> 100–500 prs</div>
+            <div class="prod-price-tier"><strong>$3.70</strong> 500–2000 prs</div>
+            <div class="prod-price-tier"><strong>$3.30</strong> 2000+ prs</div>
+          </div>
+          <a href="#rfq" class="btn-inquire-sm">Inquire This Product</a>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="prod-card">
+        <div class="prod-img" style="position:relative;"><img src="https://sc02.alicdn.com/kf/Aebc8753f5bc14ea5942b46b4ebd34938Q.png" alt="Roman Sandal" loading="lazy"></div>
+        <div class="prod-detail">
+          <div class="prod-name">Roman Strappy Sandal</div>
+          <div class="prod-type">Sandals · Summer</div>
+          <div class="prod-moq">
+            <span class="prod-moq-label">MOQ</span>
+            <span class="prod-moq-val">200 Pairs</span>
+            <span class="prod-moq-label">Lead Time</span>
+            <span class="prod-moq-val">25–35 Days</span>
+          </div>
+          <div class="prod-pricing">
+            <div class="prod-price-tier"><strong>$3.90</strong> 200–500 prs</div>
+            <div class="prod-price-tier"><strong>$3.40</strong> 500–2000 prs</div>
+            <div class="prod-price-tier"><strong>$3.00</strong> 2000+ prs</div>
+          </div>
+          <a href="#rfq" class="btn-inquire-sm">Inquire This Product</a>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="prod-card">
+        <div class="prod-img" style="position:relative;"><img src="https://sc02.alicdn.com/kf/A6174b098b33e4d41843f3e679bd1fbcdg.png" alt="Seasonal Boot" loading="lazy"><span style="position:absolute;top:10px;left:10px;background:var(--navy);color:#fff;padding:3px 9px;border-radius:2px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;">Customizable</span></div>
+        <div class="prod-detail">
+          <div class="prod-name">Essential Ankle Boot</div>
+          <div class="prod-type">Boots · All-Season</div>
+          <div class="prod-moq">
+            <span class="prod-moq-label">MOQ</span>
+            <span class="prod-moq-val">200 Pairs</span>
+            <span class="prod-moq-label">Lead Time</span>
+            <span class="prod-moq-val">30–40 Days</span>
+          </div>
+          <div class="prod-pricing">
+            <div class="prod-price-tier"><strong>$6.50</strong> 200–500 prs</div>
+            <div class="prod-price-tier"><strong>$5.80</strong> 500–2000 prs</div>
+            <div class="prod-price-tier"><strong>$5.20</strong> 2000+ prs</div>
+          </div>
+          <a href="#rfq" class="btn-inquire-sm">Inquire This Product</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Factory Tour -->
+<section id="factory" class="factory-section">
+  <div class="factory-inner">
+    <div class="factory-img-wrap">
+      <img src="https://sc02.alicdn.com/kf/A97a7f2a31b864ae3abc7c274f7755b08f.png" alt="AGSDON factory production floor" loading="lazy">
+      <div class="factory-badge">
+        <div class="factory-badge-num">25,000</div>
+        <div class="factory-badge-label">sqm total</div>
+      </div>
+    </div>
+    <div>
+      <p class="section-eyebrow">Our Capability</p>
+      <h2 class="section-title">5 Factories. One Standard: Excellence.</h2>
+      <p class="section-lead" style="margin-bottom:0;">Located in Jinjiang, the footwear manufacturing capital of China, our vertically integrated production gives you quality control from raw material to finished product.</p>
+      <div class="factory-features">
+        <div class="ff-item">
+          <div class="ff-icon">🏭</div>
+          <div>
+            <div class="ff-title">5 Production Lines</div>
+            <div class="ff-desc">Each factory specializes in a category — sneakers, leather, sandals, boots, and athletic.</div>
+          </div>
+        </div>
+        <div class="ff-item">
+          <div class="ff-icon">👷</div>
+          <div>
+            <div class="ff-title">300+ Skilled Workers</div>
+            <div class="ff-desc">Experienced craftspeople averaging 8+ years in footwear manufacturing.</div>
+          </div>
+        </div>
+        <div class="ff-item">
+          <div class="ff-icon">📐</div>
+          <div>
+            <div class="ff-title">In-House Design Team</div>
+            <div class="ff-desc">8 designers tracking global trends — new samples every week for your seasonal collection.</div>
+          </div>
+        </div>
+        <div class="ff-item">
+          <div class="ff-icon">📦</div>
+          <div>
+            <div class="ff-title">500K Pairs / Year</div>
+            <div class="ff-desc">Annual output with flexible MOQ — from small test orders to container-level production.</div>
+          </div>
+        </div>
+      </div>
+      <a href="#rfq" class="btn-inquire" style="display:inline-block;">Visit Our Factory →</a>
+    </div>
+  </div>
+</section>
+
+<!-- OEM / ODM Process -->
+<section id="oem">
+  <div class="oem-inner">
+    <div class="section-center">
+      <p class="section-eyebrow">Custom Manufacturing</p>
+      <h2 class="section-title">OEM & ODM Process</h2>
+      <p class="section-lead" style="max-width:620px;">Whether you have a complete design or just a concept — we turn your vision into production-ready footwear.</p>
+    </div>
+    <div class="oem-steps">
+      <div class="oem-step">
+        <div class="oem-step-num">1</div>
+        <div class="oem-step-title">Design Brief</div>
+        <div class="oem-step-desc">Share your designs, reference samples, or mood boards. Our team translates your vision into tech specs.</div>
+      </div>
+      <div class="oem-step">
+        <div class="oem-step-num">2</div>
+        <div class="oem-step-title">Material Sourcing</div>
+        <div class="oem-step-desc">We procure leather, mesh, rubber, and hardware from our vetted supplier network at competitive rates.</div>
+      </div>
+      <div class="oem-step">
+        <div class="oem-step-num">3</div>
+        <div class="oem-step-title">Sample Making</div>
+        <div class="oem-step-desc">Prototype in 7–10 days. Revisions until you approve. Free for confirmed bulk orders.</div>
+      </div>
+      <div class="oem-step">
+        <div class="oem-step-num">4</div>
+        <div class="oem-step-title">Mass Production</div>
+        <div class="oem-step-desc">Rigorous QC at every stage — cutting, stitching, lasting, sole attachment, and final inspection.</div>
+      </div>
+      <div class="oem-step">
+        <div class="oem-step-num">5</div>
+        <div class="oem-step-title">Pack & Ship</div>
+        <div class="oem-step-desc">Custom packaging & labeling. FOB, CIF, or DDP shipping to your warehouse or Amazon FBA.</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="#rfq" class="btn-inquire">Start Your OEM Project →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Quality Control -->
+<section id="quality" class="qc-section">
+  <div class="qc-inner">
+    <div>
+      <p class="section-eyebrow">Quality Guarantee</p>
+      <h2 class="section-title">Built to Last.<br>Checked at Every Step.</h2>
+      <p class="section-lead">Our ISO 9001-certified process includes 6 mandatory inspection gates — from raw material to finished carton.</p>
+      <div class="qc-list">
+        <div class="qc-row">
+          <div class="qc-check">✓</div>
+          <div>
+            <div class="qc-name">Raw Material Inspection</div>
+            <div class="qc-desc">All incoming leather, fabric, and components tested for color fastness, tensile strength, and chemical compliance (REACH, CPSIA).</div>
+          </div>
+        </div>
+        <div class="qc-row">
+          <div class="qc-check">✓</div>
+          <div>
+            <div class="qc-name">In-Line QC (3 Gates)</div>
+            <div class="qc-desc">Cutting accuracy, stitching quality, and lasting precision checked at every production stage by dedicated QC staff.</div>
+          </div>
+        </div>
+        <div class="qc-row">
+          <div class="qc-check">✓</div>
+          <div>
+            <div class="qc-name">Final Random Inspection (AQL 2.5)</div>
+            <div class="qc-desc">Every shipment undergoes AQL 2.5 sampling before release. Third-party inspection available on request (SGS, BV, Intertek).</div>
+          </div>
+        </div>
+        <div class="qc-row">
+          <div class="qc-check">✓</div>
+          <div>
+            <div class="qc-name">Packaging & Loading Supervision</div>
+            <div class="qc-desc">Carton drop tests, barcode scanning, and container loading supervision to ensure goods arrive intact.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="qc-img-wrap">
+      <img src="https://sc02.alicdn.com/kf/Aa880c83385d443f8a2b057777c65ec40O.png" alt="Quality control inspection at AGSDON factory" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Trade Info -->
+<section id="trade">
+  <div class="trade-inner">
+    <div class="section-center">
+      <p class="section-eyebrow">Trade Information</p>
+      <h2 class="section-title">How We Work Together</h2>
+    </div>
+    <div class="trade-grid">
+      <div class="trade-card">
+        <div class="trade-card-icon">📦</div>
+        <div class="trade-card-title">MOQ & Order Size</div>
+        <div class="trade-card-body">Starting from 100 pairs per style. Mix 3–5 styles in your first order to test the market.</div>
+        <div class="trade-card-highlight">Min: 100 Pairs</div>
+      </div>
+      <div class="trade-card">
+        <div class="trade-card-icon">💳</div>
+        <div class="trade-card-title">Payment Terms</div>
+        <div class="trade-card-body">T/T 30% deposit, 70% before shipment. L/C at sight for orders over $20,000. Alibaba Trade Assurance accepted.</div>
+        <div class="trade-card-highlight">T/T · L/C · Trade Assurance</div>
+      </div>
+      <div class="trade-card">
+        <div class="trade-card-icon">🚢</div>
+        <div class="trade-card-title">Shipping Options</div>
+        <div class="trade-card-body">FOB Xiamen, CIF to your port, or DDP to your door / Amazon FBA. Sea freight, air freight, and express available.</div>
+        <div class="trade-card-highlight">FOB · CIF · DDP</div>
+      </div>
+      <div class="trade-card">
+        <div class="trade-card-icon">⏱</div>
+        <div class="trade-card-title">Production Timeline</div>
+        <div class="trade-card-body">Samples: 7–10 days. Bulk: 25–40 days depending on style and order volume. Rush orders negotiable.</div>
+        <div class="trade-card-highlight">25–40 Days Lead Time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- B2B Testimonials -->
+<section class="testi-section">
+  <div class="testi-inner">
+    <div class="section-center">
+      <p class="section-eyebrow">Client Success</p>
+      <h2 class="section-title">Trusted by Brands Worldwide</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-country">🇺🇸 United States</div>
+        <p class="testi-text">"We've been sourcing from AGSDON for 3 seasons now. Their Mary Jane flats consistently sell out in our boutique chain. Quality is exceptional and communication is fast. Our go-to supplier for women's footwear."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">L</div>
+          <div>
+            <div class="testi-name">Lisa K.</div>
+            <div class="testi-role">Owner, Boutique Chain · Los Angeles</div>
+            <div class="testi-order">Annual Order: 15,000+ pairs</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-country">🇩🇪 Germany</div>
+        <p class="testi-text">"We needed a reliable OEM partner for our private label sneaker line. AGSDON delivered — from sample revision to on-time delivery, the process was smooth. Their QC reports are thorough and transparent."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--sage);">M</div>
+          <div>
+            <div class="testi-name">Markus W.</div>
+            <div class="testi-role">Director, Footwear Brand · Berlin</div>
+            <div class="testi-order">Annual Order: 25,000+ pairs</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-country">🇦🇺 Australia</div>
+        <p class="testi-text">"We started with a 200-pair test order of their chunky sneakers. Now we're placing 4,000-pair seasonal orders. Great value, consistent sizing, and the team is always proactive about potential delays."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--gold);">R</div>
+          <div>
+            <div class="testi-name">Rebecca T.</div>
+            <div class="testi-role">Buyer, Retail Chain · Sydney</div>
+            <div class="testi-order">Annual Order: 20,000+ pairs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RFQ Form -->
+<section id="rfq" class="rfq-section">
+  <div class="rfq-inner">
+    <div>
+      <p class="section-eyebrow">Get Started</p>
+      <h2 class="section-title">Request a Quote</h2>
+      <p class="section-lead">Tell us what you need — we'll reply within 24 hours with pricing, samples, and production timelines.</p>
+      <div class="rfq-benefits">
+        <div class="rfq-benefit"><span class="rfq-benefit-check">✓</span> Free sample for order above $500</div>
+        <div class="rfq-benefit"><span class="rfq-benefit-check">✓</span> Design support at no extra cost</div>
+        <div class="rfq-benefit"><span class="rfq-benefit-check">✓</span> 3D mockup within 48 hours</div>
+        <div class="rfq-benefit"><span class="rfq-benefit-check">✓</span> NDA available on request</div>
+        <div class="rfq-benefit"><span class="rfq-benefit-check">✓</span> Trade Assurance eligible</div>
+        <div class="rfq-benefit"><span class="rfq-benefit-check">✓</span> Multi-language communication</div>
+      </div>
+    </div>
+    <form class="rfq-form" onsubmit="event.preventDefault();alert('Thank you! Our team will get back to you within 24 hours.');this.reset();">
+      <div class="rfq-row">
+        <div class="rfq-field">
+          <label>Full Name *</label>
+          <input type="text" placeholder="John Smith" required>
+        </div>
+        <div class="rfq-field">
+          <label>Company Name</label>
+          <input type="text" placeholder="Your Brand Ltd.">
+        </div>
+      </div>
+      <div class="rfq-row">
+        <div class="rfq-field">
+          <label>Email *</label>
+          <input type="email" placeholder="john@yourbrand.com" required>
+        </div>
+        <div class="rfq-field">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="+1 234 567 8900">
+        </div>
+      </div>
+      <div class="rfq-row">
+        <div class="rfq-field">
+          <label>Product Category *</label>
+          <select required>
+            <option value="">Select...</option>
+            <option>Sneakers / Casual</option>
+            <option>Mary Janes / Flats</option>
+            <option>Sandals / Slippers</option>
+            <option>Boots / Ankle Boots</option>
+            <option>Athletic / Sports</option>
+            <option>Other / Mixed</option>
+          </select>
+        </div>
+        <div class="rfq-field">
+          <label>Estimated Order Quantity</label>
+          <select>
+            <option value="">Select...</option>
+            <option>100 – 500 pairs</option>
+            <option>500 – 2,000 pairs</option>
+            <option>2,000 – 5,000 pairs</option>
+            <option>5,000 – 10,000 pairs</option>
+            <option>10,000+ pairs</option>
+          </select>
+        </div>
+      </div>
+      <div class="rfq-field">
+        <label>Message / Requirements</label>
+        <textarea rows="4" placeholder="Tell us about your target market, preferred materials, budget range, custom packaging needs, or any specific requirements..."></textarea>
+      </div>
+      <button type="submit" class="btn-rfq">Send Inquiry →</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">AGS<em style="color:var(--rose)">DON</em><span>Footwear Manufacturer</span></a>
+        <p class="footer-desc">Women's footwear manufacturer since 2011. 5 factories in Jinjiang, China. Trusted by 500+ global brands and retailers.</p>
+        <div class="footer-contact-row"><span>📧</span> info@agsdon.store</div>
+        <div class="footer-contact-row"><span>📞</span> +86 595-xxxx-xxxx</div>
+        <div class="footer-contact-row"><span>📍</span> Jinjiang, Fujian, China 362200</div>
+        <div class="footer-social">
+          <a class="social-btn" href="#" aria-label="LinkedIn">💼</a>
+          <a class="social-btn" href="#" aria-label="Instagram">📷</a>
+          <a class="social-btn" href="#" aria-label="YouTube">▶️</a>
+          <a class="social-btn" href="#" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#categories">Sneakers</a></li>
+          <li><a href="#categories">Mary Janes</a></li>
+          <li><a href="#categories">Sandals</a></li>
+          <li><a href="#categories">Boots</a></li>
+          <li><a href="#categories">Athletic</a></li>
+          <li><a href="#categories">Full Catalog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#oem">OEM Manufacturing</a></li>
+          <li><a href="#oem">ODM Design</a></li>
+          <li><a href="#oem">Private Label</a></li>
+          <li><a href="#quality">Quality Assurance</a></li>
+          <li><a href="#trade">Shipping & Logistics</a></li>
+          <li><a href="#rfq">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#factory">About Us</a></li>
+          <li><a href="#factory">Factory Tour</a></li>
+          <li><a href="#">Certifications</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AGSDON. All rights reserved. | Jinjiang, China</span>
+      <span style="display:flex;align-items:center;gap:4px;">🔒 Trade Assurance · ISO 9001 · BSCI</span>
+      <span>Made with ♥ in Jinjiang</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile Sticky RFQ -->
+<div class="mobile-rfq">
+  <a href="#rfq">📋 Request a Quote</a>
+</div>
+
+</body>
+</html>
